@@ -1,0 +1,25 @@
+[package]
+name = "divisors_fixed"
+version = "0.4.0"
+authors = ["jh05013 <jhztfs@gmail.com>"]
+description = "A fixed & enhanced version of the divisors crate"
+license = "MIT"
+documentation = "https://docs.rs/divisors_fixed/"
+repository = "https://github.com/jh05013/divisors"
+readme = "README.md"
+edition = "2021"
+categories = ["mathematics", "algorithms"]
+
+[lib]
+name = "divisors_fixed"
+crate-type = ["rlib"]
+
+
+[dependencies]
+
+[dev-dependencies]
+criterion = "0.2"
+
+[[bench]]
+name = "big_numbers"
+harness = false
